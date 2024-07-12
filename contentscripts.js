@@ -1,7 +1,7 @@
 setTimeout(() => {
 	let tid = null, _last = null;
 	const domain = window.location.toString();
-	const isSearchEngine = domain.includes("google.com") || domain.includes("search.brave.com") || domain.includes("you.com");
+	const isSearchEngine = true; // always open in background
 
 	function isHtmlLink(aNode) {
 		return ((aNode instanceof HTMLAnchorElement && aNode.href) || (aNode instanceof HTMLAreaElement && aNode.href) || aNode instanceof HTMLLinkElement);
